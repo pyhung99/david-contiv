@@ -1,0 +1,155 @@
+<% wrap_layout :inner do %>
+	<% content_for :sidebar do %>
+		<div class="docs-sidebar hidden-print affix-top" role="complementary">
+			<ul class="nav docs-sidenav">
+				<li<%= sidebar_current("install") %>>
+					<a href="/install/index.html">Getting Started</a>
+						<ul class="nav nav-visible">
+						<li<%= sidebar_current("getting-started-vagrant") %>>
+
+							<a data-toggle="collapse" href="#collapse1" href="/install/netplugin/vagrant.html">Networking ... </a>
+							<div id="collapse1" class="panel-collapse collapse">
+									<ul>
+										<li><a href="https://github.com/contiv/demo/tree/master/net">Docker Swarm</a><br></li>
+										<li><a href="https://github.com/contiv/demo/tree/master/k8s">Kubernetes</a><br></li>
+										<li><a href="https://github.com/contiv/netplugin/tree/master/vagrant/mesos-docker">Mesos</a><br></li>
+										<li><a href="https://github.com/contiv/demo/blob/master/net/nomad.md">Nomad</a><br></li>
+									</ul>
+							</div>
+
+						</li>
+						<li<%= sidebar_current("getting-started-install") %>>
+							<a data-toggle="collapse" href="#collapse2" href="/install/netplugin/install.html">Network Topologies ... </a>
+							<div id="collapse2" class="panel-collapse collapse">
+								<ul>
+									<li><a href="/install/netplugin/docker.html">Native Routed Deployment</a></li>
+									<li><a href="/install/netplugin/kubernetes.html">Native Bridged Deployment</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">Openstack Deployment</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/nomad.html">Cloud Deployment</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="https://github.com/contiv/netplugin">Vagrant Setup</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/nomad.html">Cisco ACI</a></li>	
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="https://github.com/jainvipin/tutorial">Containers Networking 101 Tutorial</a></li>
+								</ul>
+							</div>
+						</li>
+						<li<%= sidebar_current("getting-started-vagrant") %>>
+						<a data-toggle="collapse" href="#collapse6" href="/install/netplugin/install.html">Storage ... </a>
+							<div id="collapse6" class="panel-collapse collapse">
+								<ul>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/volplugin.html">Docker Swarm</a></li>
+								</ul>
+							</div>
+						</li>
+						<li<%= sidebar_current("getting-started-vagrant") %>>
+						<a data-toggle="collapse" href="#collapse7" href="/install/netplugin/install.html">Storage Backends ... </a>
+							<div id="collapse7" class="panel-collapse collapse">
+								<ul>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">Ceph</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">NFS</a></li>
+
+								</ul>
+							</div>
+						</li>
+						<li<%= sidebar_current("getting-started-vagrant") %>>
+						<a data-toggle="collapse" href="#collapse8" href="/install/netplugin/install.html">Community Talks ... </a>
+							<div id="collapse8" class="panel-collapse collapse">
+								<ul>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="https://www.youtube.com/playlist?list=PL2k86RlAekM_g6csRwSRQAWvln5SmgicN">YouTube Links</a></li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+					<a href="/install/index.html">Networking</a>
+						<ul class="nav nav-visible">
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Terminology and Concepts</a></li>
+							<li<%= sidebar_current("getting-started-install") %>><a href="/install/netplugin/install.html">Networks</a></li>
+							<li<%= sidebar_current("getting-started-aci") %>><a href="/install/netplugin/aci.html">Tenants</a></li>
+							<li<%= sidebar_current("getting-started-kubernetes") %>>
+								<a data-toggle="collapse" href="#collapse3" href="/install/netplugin/k8s.html">Policies ... </a></li>
+									<div id="collapse3" class="panel-collapse collapse">
+										<ul>
+											<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">Security</a></li>
+											<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/kubernetes.html">Bandwidth</a></li>
+											<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">Prioritization</a></li>
+											<li<%= sidebar_current("getting-started-install") %>><a href="/install/netplugin/install.html">Loadbalancing</a></li>
+										</ul>
+									</div>
+							<li<%= sidebar_current("getting-started-install") %>>
+								<a data-toggle="collapse" href="#collapse4" href="/install/netplugin/install.html">External Connectivity ... </a>
+								<div id="collapse4" class="panel-collapse collapse">
+									<ul>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">Rerouted Network</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/kubernetes.html">Bridged Network</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">Overlay Cloud Network</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">Cisco ACI</a></li>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li<%= sidebar_current("getting-started-install") %>><a href="/install/netplugin/install.html">Service Discovery</a></li>
+							<li<%= sidebar_current("getting-started-install") %>><a href="/install/netplugin/install.html">IP Address Management (IPAM)</a></li>
+							<li<%= sidebar_current("getting-started-install") %>>
+							<a data-toggle="collapse" href="#collapse5" href="/install/netplugin/install.html">Hybrid Workloads ... </a></li>
+								<div id="collapse5" class="panel-collapse collapse">
+								<ul>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">Providing Connectivity</a></li>
+									<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/kubernetes.html">Applying Policies</a></li>
+								</ul>
+						</ul>
+					<a href="/install/index.html">Storage</a>
+						<ul class="nav nav-visible">
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Terminology</a></li>
+							<li<%= sidebar_current("getting-started-vagrant") %>>
+								<a data-toggle="collapse" href="#collapse9" href="/install/netplugin/vagrant.html">Policies</a></li>
+								<div id="collapse9" class="panel-collapse collapse">
+									<ul>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/docker.html">Allocation</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/kubernetes.html">IOPs Rate Limiting</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">Snapshots</a></li>
+										<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/mesos.html">FileSystem</a></li>
+										</li>
+									</ul>
+								</div>
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Ceph</a></li>
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">NFS</a></li>
+						</ul>
+
+					<a href="/install/index.html">Cluster</a>
+					<ul class="nav nav-visible">
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Terminology</a></li>
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Discovery</a></li>
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Commissioning</a></li>
+							<li<%= sidebar_current("getting-started-vagrant") %>><a href="/install/netplugin/vagrant.html">Decommissioning</a></li>
+						</ul>
+				</li>
+				<hr><p>
+				Reference
+					<ul class="nav nav-visible">
+						<li><a href="/install/netplugin/docker.html">Network API Reference</a><br></li>
+						<li><a href="/install/netplugin/kubernetes.html">Storage API Reference</a><br></li>
+						<li><a href="/install/netplugin/mesos.html">Cluster API Reference</a><br></li>
+					</ul>
+				<hr><p>
+				Examples
+					<ul class="nav nav-visible">
+						<li><a href="/install/netplugin/docker.html">Contiv Example 1</a><br></li>
+						<li><a href="/install/netplugin/kubernetes.html">Contiv Example 2</a><br></li>
+						<li><a href="/install/netplugin/mesos.html">Contiv Example 3</a><br></li>
+					</ul>
+				<hr><p>
+				Support
+					<ul class="nav nav-visible">
+						<li><a href="/install/netplugin/docker.html">Slack Channel</a><br></li>
+						<li><a href="/install/netplugin/kubernetes.html">GitHub</a><br></li>
+						<li><a href="/install/netplugin/mesos.html">Stackoverflow</a><br></li>
+						<li><a href="/install/netplugin/mesos.html">Mailing List</a><br></li>
+						<li><a href="/install/netplugin/mesos.html">FAQs</a><br></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<% end %>
+
+	<%= yield %>
+<% end %>
